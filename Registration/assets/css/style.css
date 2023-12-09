@@ -1,0 +1,101 @@
+/* Reset some default styles for better consistency */
+body, h1, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set some basic styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #125eeb;
+    color: #333;
+}
+
+/* Style the main container */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the image container */
+.image-container {
+    text-align: center;
+}
+
+.company {
+    font-size: 2em;
+    color: #333;
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the form container */
+.form-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thankyou-greeting {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.thankyou-message {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Animation classes */
+.slideUp-animation {
+    animation: slideUp 1s ease-in-out;
+}
+
+.slideRight-animation {
+    animation: slideRight 1s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile bottom navigation arrow */
+.mobile-btm-nav {
+    display: none; /* Hide by default */
+}
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .mobile-btm-nav {
+        display: block;
+        margin-top: 20px;
+    }
+}
