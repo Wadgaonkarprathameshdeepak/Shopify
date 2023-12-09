@@ -1,4 +1,3 @@
 # Shopify
 
-shopifyeasy.netlify.app
 
